@@ -1,6 +1,7 @@
 # Product Management Frontend
 
-Este es el frontend de la aplicación de gestión de productos, desarrollado en React. Proporciona una interfaz de usuario para interactuar con el backend.
+Este es el frontend de la aplicación de gestión de productos, desarrollado en React Vite.
+Proporciona una interfaz de usuario para interactuar con el backend.
 
 ## Requisitos
 
@@ -9,10 +10,10 @@ Este es el frontend de la aplicación de gestión de productos, desarrollado en 
 
 ## Instalación
 
-1. Navega a la carpeta del **frontend**:
+1. Navega a la carpeta del **client**:
 
    ```bash
-   cd frontend
+   cd client
    ```
 
 2. Instala las dependencias necesarias:
@@ -26,7 +27,7 @@ Este es el frontend de la aplicación de gestión de productos, desarrollado en 
 1. Inicia la aplicación React:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 2. La aplicación estará corriendo en `http://localhost:3000`.
