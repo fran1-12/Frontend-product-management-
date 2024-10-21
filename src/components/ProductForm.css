@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form, ul {
+
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 5px 0;
+    border: 2px solid #4a90e2;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="text"]:focus {
+    border-color: #0078d4;
+    outline: none;
+    box-shadow: 0 0 10px rgba(142, 45, 226, 0.2);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background-color: #0078d4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    min-height: 50px; 
+    transition: background-color 0.3s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f0f0f5;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: opacity 0.3s, transform 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:nth-of-type(1) {
+    background-color: #0f09c1;
+    color: white;
+}
+
+button:nth-of-type(1):hover {
+    background-color: #4d61ba;
+}
+
+button:nth-of-type(2) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:nth-of-type(2):hover {
+    background-color: #c0392b;
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+p.error {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    form, ul {
+        max-width: 90%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    li {
+        padding: 8px;
+    }
+}
